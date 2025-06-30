@@ -41,12 +41,6 @@ export function Header() {
       active: (path: string) => path === "/history"
     },
     {
-        href: "/statistics",
-        label: "Estatísticas",
-        icon: <BarChart2 className="h-4 w-4 text-accent" />,
-        active: (path: string) => path === "/statistics"
-    },
-    {
       href: "/how-it-works",
       label: "Sobre",
       icon: <Info className="h-4 w-4 text-accent" />,
