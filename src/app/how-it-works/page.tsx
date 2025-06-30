@@ -38,7 +38,7 @@ export default function AboutPage() {
                     alt="Foto do criador" 
                     width={480} 
                     height={480} 
-                    className="rounded-full mx-auto mb-6 border-4 border-accent/30"
+                    className="h-[120px] w-[120px] rounded-full mx-auto mb-6 border-4 border-accent/30"
                 />
                 <h1 className="text-4xl font-bold font-headline text-primary">A ferramenta que eu precisava</h1>
                 <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
