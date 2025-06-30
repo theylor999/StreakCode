@@ -2,7 +2,7 @@
 
 StreakCode é uma plataforma de aprendizado de programação projetada para ajudar desenvolvedores a aprimorar suas habilidades em algoritmos e se preparar para entrevistas técnicas, com foco em aprendizado real em vez de memorização.
 
-**[🎉 Veja o StreakCode em Ação (Live Demo no Firebase App Hosting)!](https://streakcode-app.web.app)**
+**[🎉 Veja o StreakCode em Ação (Live Demo no Vercel)!](https://[streak-code.vercel.app](https://streak-code.vercel.app))**
 
 ## Visão Geral do Aplicativo (Funcionalidades Principais)
 
@@ -29,7 +29,7 @@ StreakCode é uma plataforma de aprendizado de programação projetada para ajud
 - **Tutor de IA (StreakCode AI)**:
     - Um chat integrado em cada desafio, alimentado pelo Gemini.
     - O tutor entende o contexto do desafio e ajuda com dicas e conceitos, sem dar a solução completa.
-    - Limite de 10 mensagens por desafio para incentivar a resolução autônoma.
+    - Limite de 5 mensagens por desafio para incentivar a resolução autônoma.
     - Histórico de chat salvo localmente (`localStorage`).
 - **Histórico e Estatísticas**:
     - Uma página dedicada para visualizar todos os desafios iniciados e concluídos.
@@ -130,29 +130,6 @@ Siga os passos abaixo para configurar e rodar o StreakCode localmente.
     npm run genkit:dev
     ```
     Isso iniciará uma interface em `http://localhost:4000` para inspecionar as chamadas de IA.
-
-## Como Implantar no Vercel
-
-Implantar o StreakCode no Vercel é um processo simples, pois a plataforma é otimizada para projetos Next.js.
-
-1.  **Repositório Git**:
-    -   Certifique-se de que seu projeto está em um repositório Git (GitHub, GitLab, ou Bitbucket).
-
-2.  **Crie um Projeto no Vercel**:
-    -   Faça login na sua conta Vercel.
-    -   Clique em "Add New..." -> "Project".
-    -   Importe o repositório Git do seu projeto.
-
-3.  **Configure o Projeto**:
-    -   O Vercel detectará automaticamente que é um projeto Next.js e preencherá as configurações de build. Você não precisa alterar nada aqui.
-
-4.  **Adicione as Variáveis de Ambiente**:
-    -   Esta é a etapa mais importante. Na página de configuração do seu projeto no Vercel, vá para a aba "Settings" -> "Environment Variables".
-    -   Copie todas as variáveis do seu arquivo `.env.example` e adicione seus valores correspondentes.
-    -   **IMPORTANTE**: Para a variável `FIREBASE_PRIVATE_KEY`, copie e cole o valor completo da sua chave privada, incluindo `-----BEGIN PRIVATE KEY-----` e `-----END PRIVATE KEY-----`. O Vercel lida com chaves de múltiplas linhas corretamente.
-
-5.  **Implante**:
-    -   Clique no botão "Deploy". O Vercel irá construir e implantar sua aplicação. Após alguns minutos, seu StreakCode estará online!
 
 ## Estrutura do Projeto (Principais Pastas)
 
