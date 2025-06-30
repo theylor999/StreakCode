@@ -40,9 +40,9 @@ export default function AboutPage() {
                     height={480} 
                     className="rounded-full mx-auto mb-6 border-4 border-accent/30"
                 />
-                <h1 className="text-4xl font-bold font-headline text-primary">A Ferramenta que Eu Gostaria de Ter Tido</h1>
+                <h1 className="text-4xl font-bold font-headline text-primary">A ferramenta que eu precisava</h1>
                 <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
-                    Criei o StreakCode por uma necessidade pessoal. Ao participar de um processo seletivo com live coding, percebi que precisava estudar mais, mas de uma forma diferente.
+                    Criei o StreakCode a partir de uma necessidade real. Durante um processo seletivo com live coding, percebi que precisava praticar mais. Porém, os sites que encontrei focavam apenas em desafios prontos e fórmulas para decorar, em vez de realmente me ajudar a aprender e evoluir.
                 </p>
                  <p className="mt-2 text-lg text-muted-foreground max-w-3xl mx-auto">
                     Muitos sites de programação te levam a decorar respostas para os mesmos algoritmos de sempre. Eu queria algo que me ajudasse a **entender de verdade**. Assim nasceu a ideia de uma plataforma com foco em aprendizado, e não em memorização.
