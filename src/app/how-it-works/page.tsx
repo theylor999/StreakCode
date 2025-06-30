@@ -36,8 +36,8 @@ export default function AboutPage() {
                  <Image 
                     src="/creator-photo.jpg"
                     alt="Foto do criador" 
-                    width={120} 
-                    height={120} 
+                    width={480} 
+                    height={480} 
                     className="rounded-full mx-auto mb-6 border-4 border-accent/30"
                 />
                 <h1 className="text-4xl font-bold font-headline text-primary">A Ferramenta que Eu Gostaria de Ter Tido</h1>
