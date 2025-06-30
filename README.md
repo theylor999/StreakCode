@@ -113,8 +113,8 @@ Siga os passos abaixo para configurar e rodar o StreakCode localmente.
     ```
 
 3.  **Configure as Variáveis de Ambiente**:
-    -   Renomeie o arquivo `.env.example` para `.env`.
-    -   Preencha as variáveis de ambiente com suas chaves do Firebase e do Google AI (Genkit). Você precisará de um projeto Firebase e credenciais de serviço para as estatísticas e uma API key do Google AI para o Genkit.
+    -   Criando o arquivo `.env`.
+    -   Preencha as variáveis de ambiente com suas chaves do Firebase e do Google AI (Genkit).
 
 ### Rodando a Aplicação
 
@@ -147,7 +147,6 @@ StreakCode/
 │   ├── hooks/                  # Hooks customizados (useChallengeManager, useToast, etc.)
 │   ├── lib/                    # Utilitários, tipos, dados de desafios, etc.
 │   └── types/                  # Definições de tipos TypeScript
-├── .env.example                # Arquivo de exemplo para variáveis de ambiente
 ├── next.config.ts              # Configurações do Next.js
 ├── package.json
 ├── tailwind.config.ts          # Configurações do Tailwind CSS
