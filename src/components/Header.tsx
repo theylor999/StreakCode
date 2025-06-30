@@ -1,12 +1,11 @@
-
 "use client";
 
 import Link from 'next/link'
 import { usePathname, useSearchParams } from 'next/navigation';
-import { Menu, Terminal, Sparkles, Calendar, User } from 'lucide-react'
+import { Menu, Terminal, Sparkles, Calendar, BarChart2, Code, History, Info } from 'lucide-react'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { Button } from './ui/button';
-import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from './ui/sheet';
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
 
@@ -21,7 +20,7 @@ export function Header() {
       href: "/daily-challenge",
       label: "Desafio Diário",
       icon: <Calendar className="h-4 w-4 text-accent" />,
-      active: (path: string) => path === "/daily-challenge" || isDailyPage
+      active: (path: string) => path === "/daily-challenge" || (path.startsWith('/challenge/') && isDailyPage)
     },
     {
       href: "/custom-challenges",
@@ -32,16 +31,25 @@ export function Header() {
     {
       href: "/challenges/python",
       label: "Python",
+      icon: <Code className="h-4 w-4 text-accent" />,
       active: (path: string) => (path === "/challenges/python" || path.startsWith('/challenge/python-')) && !isDailyPage
     },
     {
       href: "/history",
       label: "Histórico",
+      icon: <History className="h-4 w-4 text-accent" />,
       active: (path: string) => path === "/history"
+    },
+    {
+        href: "/statistics",
+        label: "Estatísticas",
+        icon: <BarChart2 className="h-4 w-4 text-accent" />,
+        active: (path: string) => path === "/statistics"
     },
     {
       href: "/how-it-works",
       label: "Sobre",
+      icon: <Info className="h-4 w-4 text-accent" />,
       active: (path: string) => path === "/how-it-works"
     },
   ];
@@ -88,6 +96,7 @@ export function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="left">
+                <SheetTitle className="sr-only">Menu</SheetTitle>
                 <div className="flex flex-col gap-4 p-4">
                   <Link href="/" className="mr-6 flex items-center space-x-2 mb-4" onClick={() => setIsSheetOpen(false)}>
                     <Terminal className="h-6 w-6 text-accent" />
