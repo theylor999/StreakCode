@@ -2,7 +2,7 @@
 
 StreakCode é uma plataforma de aprendizado de programação projetada para ajudar desenvolvedores a aprimorar suas habilidades em algoritmos e se preparar para entrevistas técnicas, com foco em aprendizado real em vez de memorização.
 
-**[🎉 Veja o StreakCode em Ação (Live Demo no Vercel)!](https://[streak-code.vercel.app](https://streak-code.vercel.app))**
+**[🎉 Veja o StreakCode em Ação (Live Demo no Vercel)!](https://streak-code.vercel.app)**
 
 ## Visão Geral do Aplicativo (Funcionalidades Principais)
 
